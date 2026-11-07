@@ -1,0 +1,25 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://id.schemas.pub/o/dtinit.org/dtp/album-schema",
+  "title": "Schema for Album metadata in data-transfer-project generic endpoints",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "@type": {
+      "const": "Album"
+    }
+  },
+  "required": [
+    "@type",
+    "id",
+    "name"
+  ]
+}

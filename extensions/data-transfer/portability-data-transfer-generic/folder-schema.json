@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://id.schemas.pub/o/dtinit.org/dtp/folder-schema",
+  "title": "Schema for folder metadata in data-transfer-project generic endpoints",
+  "type": "object",
+  "properties": {
+    "path": {
+      "type": "string",
+      "description": "Full path of the folder to be created"
+    },
+    "@type": {
+      "const": "Folder"
+    }
+  },
+  "required": [
+    "@type",
+    "path"
+  ]
+}
